@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Cursos - Dounel Createur</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">Dounel Createur</a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="cursos.html" class="active">Cursos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Courses Header -->
+    <section class="courses-header">
+        <div class="container">
+            <h1>Nuestros Cursos</h1>
+            <p>Explora nuestra selección de cursos diseñados para impulsar tu carrera</p>
+        </div>
+    </section>
+
+    <!-- All Courses -->
+    <section class="all-courses">
+        <div class="container">
+            <!-- Filters -->
+            <div class="course-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="tech">Tecnología</button>
+                <button class="filter-btn" data-filter="business">Negocios</button>
+                <button class="filter-btn" data-filter="design">Diseño</button>
+            </div>
+
+            <!-- Course Grid -->
+            <div class="courses-grid">
+                <!-- Desarrollo Web -->
+                <div class="course-card" data-category="tech">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&auto=format" alt="Desarrollo Web">
+                    <div class="course-content">
+                        <span class="course-tag">Tecnología</span>
+                        <h3>Desarrollo Web Full Stack</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 40 horas</span>
+                            <span><i class="fas fa-signal"></i> Principiante</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$200.00</span>
+                            <div id="paypal-button-web-courses" class="paypal-button"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marketing Digital -->
+                <div class="course-card" data-category="business">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format" alt="Marketing Digital">
+                    <div class="course-content">
+                        <span class="course-tag">Negocios</span>
+                        <h3>Marketing Digital</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 35 horas</span>
+                            <span><i class="fas fa-signal"></i> Intermedio</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$200.00</span>
+                            <div id="paypal-button-marketing-courses" class="paypal-button"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diseño UX/UI -->
+                <div class="course-card" data-category="design">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&auto=format" alt="Diseño UX/UI">
+                    <div class="course-content">
+                        <span class="course-tag">Diseño</span>
+                        <h3>Diseño UX/UI</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 30 horas</span>
+                            <span><i class="fas fa-signal"></i> Intermedio</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$200.00</span>
+                            <div id="paypal-button-design-courses" class="paypal-button"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python -->
+                <div class="course-card" data-category="tech">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&auto=format" alt="Python">
+                    <div class="course-content">
+                        <span class="course-tag">Tecnología</span>
+                        <h3>Python para Data Science</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 45 horas</span>
+                            <span><i class="fas fa-signal"></i> Intermedio</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$200.00</span>
+                            <button onclick="window.location.href='curso.html?course=python-data-science'" class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="course-card" data-category="tech">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&auto=format" alt="JavaScript">
+                    <div class="course-content">
+                        <span class="course-tag">Tecnología</span>
+                        <h3>JavaScript Moderno</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 38 horas</span>
+                            <span><i class="fas fa-signal"></i> Intermedio</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$200.00</span>
+                            <button onclick="window.location.href='curso.html?course=javascript-moderno'" class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dounel Createur</h3>
+                    <p>Transformando vidas a través del aprendizaje online.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="curso.html">Cursos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/18eWJjoZW4/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/Dounel3createur?s=09"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/dounelcreateur?igsh=MWV6djE2M3h1a2J0Ng=="><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dounel Createur. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=AVrFL4tMiJbkuLa9ig9GjjArdeSm8Nlmp6TSsQCA2vXfz7CXU1QyJY0-YQ_k77q_rReH-EZ_n6PvhC2i&currency=USD"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Configuración de PayPal para cada botón
+            const createPayPalButton = (containerId, courseTitle) => {
+                paypal.Buttons({
+                    createOrder: function(data, actions) {
+                        return actions.order.create({
+                            purchase_units: [{
+                                amount: {
+                                    value: '200.00'
+                                },
+                                description: courseTitle
+                            }]
+                        });
+                    },
+                    onApprove: function(data, actions) {
+                        return actions.order.capture().then(function(details) {
+                            alert('¡Gracias por tu compra ' + details.payer.name.given_name + '!');
+                        });
+                    }
+                }).render('#' + containerId);
+            };
+
+            // Crear botones de PayPal para cada curso
+            createPayPalButton('paypal-button-web-courses', 'Curso de Desarrollo Web Full Stack');
+            createPayPalButton('paypal-button-marketing-courses', 'Curso de Marketing Digital');
+            createPayPalButton('paypal-button-design-courses', 'Curso de Diseño UX/UI');
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

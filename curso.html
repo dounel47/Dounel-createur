@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Curso - Dounel Createur</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">Dounel Createur</a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li>
+                            <a href="#" class="has-submenu">Cursos</a>
+                            <ul class="submenu">
+                                <li><a href="curso.html?curso=web">Desarrollo Web</a></li>
+                                <li><a href="curso.html?curso=marketing">Marketing Digital</a></li>
+                                <li><a href="curso.html?curso=design">Diseño UX/UI</a></li>
+                                <li><a href="curso.html?curso=python">Python</a></li>
+                                <li><a href="curso.html?curso=photo">Fotografía</a></li>
+                                <li><a href="curso.html?curso=english">Inglés</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Course Details -->
+    <section class="course-details">
+        <div class="container">
+            <div class="course-header">
+                <div class="course-info">
+                    <h1 id="course-title"></h1>
+                    <p id="course-description"></p>
+                    <div class="course-meta">
+                        <span id="course-duration"><i class="fas fa-clock"></i> Duración: </span>
+                        <span id="course-level"><i class="fas fa-signal"></i> Nivel: </span>
+                    </div>
+                </div>
+                <div class="course-preview">
+                    <img id="course-image" src="" alt="Imagen del curso">
+                    <div class="course-price-box">
+                        <div class="price" id="course-price" data-price="200.00">$200.00</div>
+                        <div id="paypal-button-container"></div>
+                        <p class="guarantee"><i class="fas fa-shield-alt"></i> 30 días de garantía de devolución</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-content">
+                <h2>Contenido del Curso</h2>
+                <div class="curriculum" id="course-curriculum">
+                    <!-- El contenido se llenará dinámicamente -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dounel Createur</h3>
+                    <p>Transformando vidas a través del aprendizaje online.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/18eWJjoZW4/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/Dounel3createur?s=09"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/dounelcreateur?igsh=MWV6djE2M3h1a2J0Ng=="><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dounel Createur. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AVrFL4tMiJbkuLa9ig9GjjArdeSm8Nlmp6TSsQCA2vXfz7CXU1QyJY0-YQ_k77q_rReH-EZ_n6PvhC2i&currency=USD"></script>
+    <script src="js/main.js"></script>
+    <script src="js/course-data.js"></script>
+    <script src="js/course-loader.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM Content Loaded');
+            loadCourseContent();
+            
+            // Configurar PayPal después de cargar el curso
+            paypal.Buttons({
+                createOrder: function(data, actions) {
+                    const coursePrice = getCoursePrice();
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: coursePrice
+                            },
+                            description: 'Curso en Dounel Createur'
+                        }]
+                    });
+                },
+                onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(details) {
+                        alert('¡Gracias por tu compra ' + details.payer.name.given_name + '!');
+                    });
+                }
+            }).render('#paypal-button-container');
+        });
+    </script>
+</body>
+</html>

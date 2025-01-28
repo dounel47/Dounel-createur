@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dounel Createur - Plataforma de Cursos Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">Dounel Createur</a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active">Inicio</a></li>
+                        <li>
+                            <a href="#" class="has-submenu">Cursos</a>
+                            <ul class="submenu">
+                                <li><a href="curso.html?curso=web">Desarrollo Web</a></li>
+                                <li><a href="curso.html?curso=marketing">Marketing Digital</a></li>
+                                <li><a href="curso.html?curso=design">Diseño UX/UI</a></li>
+                                <li><a href="curso.html?curso=python">Python</a></li>
+                                <li><a href="curso.html?curso=photo">Fotografía</a></li>
+                                <li><a href="curso.html?curso=english">Inglés</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Aprende lo que amas, cuando quieras y desde donde quieras</h1>
+                <p>Descubre una nueva forma de aprender con nuestros cursos online en tecnología, desarrollo personal, negocios, idiomas y arte.</p>
+                <a href="cursos.html" class="btn btn-primary btn-large">Comprar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses-section" class="courses-section hidden">
+        <div class="container">
+            <h2>Nuestros Cursos</h2>
+            <div class="courses-grid">
+                <!-- Course 1 -->
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&auto=format" alt="Desarrollo Web">
+                    <div class="course-content">
+                        <span class="course-tag">Tecnología</span>
+                        <h3>Desarrollo Web Full Stack</h3>
+                        <p>Aprende desarrollo web desde cero hasta nivel profesional</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 40 horas</span>
+                            <span><i class="fas fa-signal"></i> Principiante</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$200.00</span>
+                            <button class="btn btn-primary buy-button">Comprar</button>
+                            <div id="paypal-container-TKQZR5774X8HY" class="paypal-button" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format" alt="Marketing">
+                    <div class="course-content">
+                        <span class="course-tag">Negocios</span>
+                        <h3>Marketing Digital</h3>
+                        <p>Domina las estrategias de marketing digital moderno</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 35 horas</span>
+                            <span><i class="fas fa-signal"></i> Intermedio</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$200.00</span>
+                            <button class="btn btn-primary buy-button">Comprar</button>
+                            <div id="paypal-container-TKQZR5774X8HY" class="paypal-button" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&auto=format" alt="Diseño">
+                    <div class="course-content">
+                        <span class="course-tag">Diseño</span>
+                        <h3>Diseño UX/UI</h3>
+                        <p>Crea interfaces atractivas y funcionales</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 45 horas</span>
+                            <span><i class="fas fa-signal"></i> Intermedio</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$200.00</span>
+                            <button class="btn btn-primary buy-button">Comprar</button>
+                            <div id="paypal-container-TKQZR5774X8HY" class="paypal-button" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section id="blog-preview" class="blog-preview">
+        <div class="container">
+            <h2>Últimos Artículos del Blog</h2>
+            <div class="blog-posts">
+                <!-- Blog Post 1 -->
+                <article class="blog-post">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&auto=format" alt="Desarrollo Web">
+                        <span class="post-category">Tecnología</span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> 25 Enero, 2025</span>
+                            <span><i class="far fa-clock"></i> 5 min lectura</span>
+                        </div>
+                        <h2>Las Tendencias de Desarrollo Web para 2025</h2>
+                        <p>Descubre las tecnologías y frameworks que dominarán el desarrollo web este año...</p>
+                        <a href="blog.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-post">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&auto=format" alt="IA">
+                        <span class="post-category">Educación</span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> 24 Enero, 2025</span>
+                            <span><i class="far fa-clock"></i> 4 min lectura</span>
+                        </div>
+                        <h2>Cómo la IA está Transformando la Educación Online</h2>
+                        <p>La inteligencia artificial está revolucionando la forma en que aprendemos...</p>
+                        <a href="blog.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center">
+                <a href="blog.html" class="btn btn-primary btn-large">Ver Todos los Artículos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section class="featured-courses">
+        <div class="container">
+            <h2>Cursos Destacados</h2>
+            <div class="courses-grid">
+                <!-- Desarrollo Web -->
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&auto=format" alt="Desarrollo Web">
+                    <div class="course-content">
+                        <span class="course-tag">Tecnología</span>
+                        <h3>Desarrollo Web Full Stack</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 40 horas</span>
+                            <span><i class="fas fa-signal"></i> Principiante</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$200.00</span>
+                            <button class="btn btn-primary buy-button">Comprar</button>
+                            <div id="paypal-container-TKQZR5774X8HY" class="paypal-button" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marketing Digital -->
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format" alt="Marketing Digital">
+                    <div class="course-content">
+                        <span class="course-tag">Negocios</span>
+                        <h3>Marketing Digital</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 35 horas</span>
+                            <span><i class="fas fa-signal"></i> Intermedio</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$200.00</span>
+                            <button class="btn btn-primary buy-button">Comprar</button>
+                            <div id="paypal-container-TKQZR5774X8HY" class="paypal-button" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diseño UX/UI -->
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&auto=format" alt="Diseño UX/UI">
+                    <div class="course-content">
+                        <span class="course-tag">Diseño</span>
+                        <h3>Diseño UX/UI</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 30 horas</span>
+                            <span><i class="fas fa-signal"></i> Intermedio</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$200.00</span>
+                            <button class="btn btn-primary buy-button">Comprar</button>
+                            <div id="paypal-container-TKQZR5774X8HY" class="paypal-button" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python Data Science -->
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&auto=format" alt="Python Data Science">
+                    <div class="course-content">
+                        <span class="course-tag">Tecnología</span>
+                        <h3>Python para Data Science</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 45 horas</span>
+                            <span><i class="fas fa-signal"></i> Intermedio</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$200.00</span>
+                            <button class="btn btn-primary buy-button">Comprar</button>
+                            <div id="paypal-container-TKQZR5774X8HY" class="paypal-button" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fotografía Digital -->
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?w=600&auto=format" alt="Fotografía Digital">
+                    <div class="course-content">
+                        <span class="course-tag">Arte</span>
+                        <h3>Fotografía Digital</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 25 horas</span>
+                            <span><i class="fas fa-signal"></i> Principiante</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$200.00</span>
+                            <button class="btn btn-primary buy-button">Comprar</button>
+                            <div id="paypal-container-TKQZR5774X8HY" class="paypal-button" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inglés de Negocios -->
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&auto=format" alt="Inglés de Negocios">
+                    <div class="course-content">
+                        <span class="course-tag">Idiomas</span>
+                        <h3>Inglés de Negocios</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 50 horas</span>
+                            <span><i class="fas fa-signal"></i> Intermedio</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$200.00</span>
+                            <button class="btn btn-primary buy-button">Comprar</button>
+                            <div id="paypal-container-TKQZR5774X8HY" class="paypal-button" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Lo que dicen nuestros estudiantes</h2>
+            <div class="testimonials-grid">
+                <!-- Testimonial cards will be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>¿Listo para comenzar tu viaje de aprendizaje?</h2>
+            <p>Únete a nuestra comunidad de estudiantes y transforma tu vida con nuevos conocimientos</p>
+            <a href="cursos.html" class="btn btn-primary btn-large">Comprar Ahora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dounel Createur</h3>
+                    <p>Transformando vidas a través del aprendizaje online.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="curso.html">Cursos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/18eWJjoZW4/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/Dounel3createur?s=09"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/dounelcreateur?igsh=MWV6djE2M3h1a2J0Ng=="><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dounel Createur. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAa4QLzXCrzIlEjkUyx0_l_5yxVTFIdFCLtiKT5UN79k45bbXJY9V8Hl1KYTIS6ko5ekJau6IYq9fbdFY&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar todos los botones de PayPal
+            document.querySelectorAll('[id^="paypal-container-"]').forEach(container => {
+                paypal.HostedButtons({
+                    hostedButtonId: "TKQZR5774X8HY",
+                }).render("#" + container.id);
+            });
+
+            // Agregar evento click a los botones de compra
+            document.querySelectorAll('.buy-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    // Ocultar todos los contenedores de PayPal
+                    document.querySelectorAll('.paypal-button').forEach(container => {
+                        container.style.display = 'none';
+                    });
+                    
+                    // Mostrar el contenedor de PayPal siguiente al botón clickeado
+                    const paypalContainer = this.nextElementSibling;
+                    paypalContainer.style.display = 'block';
+                });
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initializePage();
+            initializeMobileMenu();
+            initializeBlog();
+        });
+    </script>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/18098619736" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+        <span>¿Necesitas ayuda?</span>
+    </a>
+</body>
+</html>
